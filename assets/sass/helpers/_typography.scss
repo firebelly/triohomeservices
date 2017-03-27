@@ -1,16 +1,41 @@
 // Typography
 
 // Fonts
-$sans: Helvetica, sans-serif;
-$serif: Georgia, serif;
-$amp: Georgia, serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-// Font Classes
-.amp {
-	font-family: $amp;
+
+@mixin h1 {
+
 }
 
-//sizes
-$small: 0.5em;
-$med: 1em;
-$big: 3em;
+@mixin h2 {
+  
+}
+
+@mixin h3 {
+  
+}
+
+@mixin p1 {
+  
+}
+
+@mixin p2 {
+  
+}
+
+.h1 {
+  @include h1;
+}
+.h2 {
+  @include h2;
+}
+.h3 {
+  @include h3;
+}
+.p1 {
+  @include p1;
+}
+.p2 {
+  @include p2;
+}

@@ -5,6 +5,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 article,
 aside,
 details,
@@ -373,10 +374,6 @@ table {
   border-spacing: 0;
 }
 
-.amp {
-  font-family: Georgia, serif;
-}
-
 .grid {
   width: 100%;
   display: -webkit-box;
@@ -432,6 +429,7 @@ html {
 body {
   font-size: 16px;
   font-size: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -448,20 +446,19 @@ img {
   max-width: 100%;
 }
 
-.wrap {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-  max-width: 900px;
-  position: relative;
-  *zoom: 1;
+.site-main {
+  margin-left: 22.5%;
 }
-.wrap:before, .wrap:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
+
+.site-section {
+  padding: 60px 136px 60px 330px;
 }
-.wrap:after {
-  clear: both;
+
+.section-content {
+  max-width: 464px;
+}
+
+.site-header {
+  position: fixed;
+  width: 22.5%;
 }
