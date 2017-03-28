@@ -11,15 +11,24 @@ body {
 	font-size: 16px; //Em base unit
 	font-size: 100%;
   font-family: 'Roboto', sans-serif;
+  @include p2;
+  background-color: $blue;
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.25em;
+  margin: 1.25em 0;
 }
 
 a {
 	color: inherit;
+  transition: color $hover-transition;
+
+  &:hover {
+    color: $white;
+    .underline {
+      border-color: $white;
+    }
+  }
 }
 
 img {
@@ -27,26 +36,108 @@ img {
 	max-width: 100%;
 }
 
-// .wrap {
-//   width: 100%;
-//   margin: 0 auto;
-//   padding: 0 10px;
-//   max-width: $bpLrg; // change to whatever 
-//   position: relative;
-//   @include clearfix();
-//   @include min-screen($bpMd) {
-//     // set breakpoints on a per-module basis when possible
-//   }
-// }
+.centered {
+  text-align: center;
+}
+
+.highlight {
+  background: linear-gradient(to top, transparent 0, transparent 5%, $blue 5%, $blue 35%, transparent 35%, transparent 100%);
+}
+
+.underline {
+  border-bottom: 2px solid $black;
+  transition: border-color $hover-transition;
+}
+
+.button {
+  @include h3;
+  padding: 12px;
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+  border-radius: 24px;
+  text-decoration: none;
+  border: 3px solid black;
+  transition: color $hover-transition, background-color $hover-transition;
+
+  &:hover {
+    color: $blue;
+    background-color: $black
+  }
+}
+
+.user-content {
+  h1,h2,h3,h4,h5,h6 {
+    @include h3;
+  }
+  ul {
+    margin: 30px 0 18px;
+    padding-left: 0;
+    list-style: none;
+    li {
+      &:before {
+        content: '— ';
+      }
+    }
+    h3 {
+      margin: 0;
+    }
+  }
+}
 
 .site-main {
-  margin-left: 22.5%;
+  margin-left: 270px; //22.5%;
 }
 
 .site-section {
-  padding: 60px 136px 60px 330px;
+  position: relative;
+  padding: 60px 136px 60px 330px; //27.5%;
+
+  &:nth-of-type(even) {
+    background-color: $white;
+    background-image: url('../images/background.svg');
+    background-size: 160px;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: $blue-lite;
+  }
+
+  .section-title {
+    top: 0;
+    left: 0;
+    margin: 0;
+    @include h2;
+    width: 330px; //27.5%;
+    padding: 60px;
+    position: absolute;
+    max-width: 330px;
+  }
+
+  .section-content {
+    max-width: 464px;
+
+    p { 
+      margin: 18px 0;
+    }
+
+    p:first-child {
+      @include p1;
+      margin-top: 0;
+    }
+  }
+
+  &.-headline {
+    @include p1;
+    padding-top: 87px;
+    background-color: inherit;
+
+    p:first-child {
+      @include h1;
+      margin: 0 0 35px;
+    }
+  }
 }
 
-.section-content {
-  max-width: 464px;
-}
+
+

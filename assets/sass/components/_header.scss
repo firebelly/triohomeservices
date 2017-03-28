@@ -1,6 +1,28 @@
 // Header
 
 .site-header {
-  position: fixed;
-  width: 22.5%;
+  width: 270px; //22.5%;
+  position: fixed; 
+  padding: 96px 60px 60px 90px;
+
+  .site-nav {
+    margin-top: 47px;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    li {
+      @include h3;
+      text-align: center;
+
+      a {
+        display: block;
+        padding: 18px 0;
+        @include nav-link;
+        text-decoration: none;
+      }
+    }
+  }
 }

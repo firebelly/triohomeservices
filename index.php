@@ -22,39 +22,40 @@
   </head>
   <body>
     <header class="site-header" role="banner">
-      <h1>Trio Home Services</h1>
-      <nav>
+      <img src="assets/images/logo.svg" alt="Trio Home Services logo" class="logo">
+      <h1 class="visually-hidden">Trio Home Services</h1>
+      <nav class="site-nav">
         <ul>
-          <li><a href="#what-we-do">What We Do</a></li>
-          <li><a href="#rates-and-scheduling">Rates and Scheduling</a></li>
-          <li><a href="#about-trio">About Trio</a></li>          
+          <li><a href="#what-we-do" class="smoothscroll"><span class="underline">What We Do</span></a></li>
+          <li><a href="#rates-and-scheduling" class="smoothscroll"><span class="underline">Rates and Scheduling</span></a></li>
+          <li><a href="#about-trio" class="smoothscroll"><span class="underline">About Trio</span></a></li>          
         </ul>
       </nav>
     </header>
     <main class="site-main" role="main">
-      <section class="site-section bigger-text">
-        <div class="section-content">
+      <section class="site-section -headline">
+        <div class="section-content user-content">
           <p>Compassionate, professional and personal assistance in the comfort of your own home.</p>
           <p>Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.</p>
         </div>
       </section>
       <section class="site-section" id="what-we-do">
         <h2 class="section-title">What We Do</h2>
-        <div class="section-content">
+        <div class="section-content user-content">
           <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities. </p>
-          <h3>We do it all:</h3>
           <ul>
-            <li>Housekeeping</li>
-            <li>Personal Care &amp; Errands</li>
-            <li>Pet Care</li>
-            <li>Mobility Assistance</li>
+            <h3>We do it all:</h3>
+            <li><span class="highlight">Housekeeping</span></li>
+            <li><span class="highlight">Personal Care &amp; Errands</span></li>
+            <li><span class="highlight">Pet Care</span></li>
+            <li><span class="highlight">Mobility Assistance</span></li>
           </ul>
           <p>Our number one priority is ensuring our clients are healthy and safe, with all their needs provided for.</p>
         </div>
       </section>
       <section class="site-section" id="rates-and-scheduling">
-        <h2 class="section-title">Rates And Scheduling</h2>
-        <div class="section-content">
+        <h2 class="section-title">Rates and Scheduling</h2>
+        <div class="section-content user-content">
           <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.</p>
           <p>Our rates start at $15/hour, for a minimum of three hours. It’s important to us that those who need accessible, affordable assistance can find it. Call or email to get a quote.</p>
           <p>Whether it’s two hours a week, daily assistance or one full day of deep cleaning and comprehensive care, we’re committed to delivering excellent, kind and reliable service.</p>
@@ -64,7 +65,7 @@
       </section>
       <section class="site-section" id="about-trio">
         <h2 class="section-title">About Trio</h2>
-        <div class="section-content">
+        <div class="section-content user-content">
           <p>We have extensive experience in case management, home care and nursing assistance, with credentials that include Heartland Alliance, Casa Norte and NextLevelHealth. We are compassionate communicators and natural helpers who understand the difficulty many people, especially seniors, face trying to navigate a complex healthcare system and find the support they need. </p>
           <p>Trio was founded by Chapearl Thompson, CNA, a Chicago native and proud member of her local community, with ties to Humboldt Park organizations Reason to Give and Firebelly Design. She brought her sister and daughter on board to round out the family business in 2017.</p>
         </div>
@@ -73,7 +74,7 @@
     <footer class="site-footer" role="contentinfo">
 
     </footer>
-    <script src="assets/js/build/main.min.js"></script>
+    <script src="assets/js/build/site.min.js"></script>
     <script type="text/javascript">// Google Analytics
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-XXXXX-X']); // Replace "XXXXX-X" with your account code
