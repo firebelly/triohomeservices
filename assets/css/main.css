@@ -664,3 +664,55 @@ img {
   font-style: normal;
   text-decoration: none;
 }
+
+.site-footer {
+  font-size: 14px;
+  line-height: 1.2857;
+  letter-spacing: 0.060em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  z-index: 10;
+  color: #fff;
+  min-height: 192px;
+  position: relative;
+  background-color: #000;
+  *zoom: 1;
+}
+.site-footer:before, .site-footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.site-footer:after {
+  clear: both;
+}
+.site-footer a {
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #7dccf2;
+}
+.site-footer .logo-block {
+  float: left;
+  width: 270px;
+  padding-top: 36px;
+  padding-left: 120px;
+}
+.site-footer .logo-block .logo {
+  width: 57px;
+}
+.site-footer .contact-block {
+  float: left;
+  width: 100%;
+  max-width: 464px;
+  padding-top: 60px;
+  margin-left: 330px;
+}
+.site-footer .contact-block .phone, .site-footer .contact-block .email {
+  display: inline-block;
+}
+.site-footer .contact-block .email {
+  width: 246px;
+}

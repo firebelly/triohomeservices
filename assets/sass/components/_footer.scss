@@ -1,5 +1,42 @@
 // Footer
 
 .site-footer {
-  
+  @include h3;
+  z-index: 10;
+  color: $white;
+  min-height: 192px;
+  position: relative;
+  background-color: $black;
+  @include clearfix;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  .logo-block{
+    float: left;
+    width: 270px;
+    padding-top: 36px;
+    padding-left: 120px;
+
+    .logo { 
+      width: 57px;
+    }
+  }
+  .contact-block {
+    float: left;
+    width: 100%;
+    max-width: 464px;
+    padding-top: 60px;
+    margin-left: 330px;
+    .phone, .email {
+      display: inline-block;
+    }
+    .email {
+      width: 246px;
+    }
+  }
 }

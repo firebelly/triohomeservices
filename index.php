@@ -59,7 +59,7 @@
           <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.</p>
           <p>Our rates start at $15/hour, for a minimum of three hours. It’s important to us that those who need accessible, affordable assistance can find it. Call or email to get a quote.</p>
           <p>Whether it’s two hours a week, daily assistance or one full day of deep cleaning and comprehensive care, we’re committed to delivering excellent, kind and reliable service.</p>
-          <a href="mailto:" class="button">Email us to get a quote</a>
+          <a href="mailto:#" class="button">Email us to get a quote</a>
           <p class="centered">Or call 312.434.0083</p>
         </div>
       </section>
@@ -72,7 +72,13 @@
       </section>
     </main>
     <footer class="site-footer" role="contentinfo">
-
+      <div class="logo-block">
+        <img src="assets/images/logo.svg" alt="Trio Home Services logo" class="logo">
+      </div>
+      <div class="contact-block">
+        <div class="email"><a href="mailto:#">emailtk@url.com</a></div>
+        <div class="phone">312.434.0083</div>
+      </div>
     </footer>
     <script src="assets/js/build/site.min.js"></script>
     <script type="text/javascript">// Google Analytics
