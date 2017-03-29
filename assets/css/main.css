@@ -439,7 +439,7 @@ table {
   margin-top: 1em;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 860px) {
   .flex-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -528,6 +528,12 @@ img {
           transition: border-color 0.2s ease-out;
 }
 
+@media screen and (min-width: 860px) {
+  .single-line-md {
+    display: block;
+  }
+}
+
 .button {
   font-size: 14px;
   line-height: 1.2857;
@@ -570,13 +576,20 @@ img {
   margin: 0;
 }
 
-.site-main {
-  margin-left: 270px;
+@media screen and (min-width: 860px) {
+  .site-main {
+    margin-left: 270px;
+  }
 }
 
 .site-section {
   position: relative;
-  padding: 60px 136px 60px 330px;
+  padding: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .site-section {
+    padding-left: 330px;
+  }
 }
 .site-section:nth-of-type(even) {
   background-color: #fff;
@@ -587,32 +600,42 @@ img {
   background-color: #aedff8;
 }
 .site-section .section-title {
-  top: 0;
-  left: 0;
-  margin: 0;
   font-size: 30px;
   line-height: 1;
   letter-spacing: -0.012em;
   font-weight: 900;
   font-style: normal;
-  width: 330px;
-  padding: 60px;
-  position: absolute;
-  max-width: 330px;
+  margin: 0 0 30px;
 }
-.site-section .section-content {
-  max-width: 464px;
+@media screen and (min-width: 1200px) {
+  .site-section .section-title {
+    top: 0;
+    left: 0;
+    width: 330px;
+    padding: 60px;
+    max-width: 330px;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 860px) {
+  .site-section .section-content {
+    max-width: 464px;
+  }
 }
 .site-section .section-content p {
   margin: 18px 0;
 }
 .site-section .section-content p:first-child {
-  font-size: 24px;
-  line-height: 1.25;
-  letter-spacing: 0.016em;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 0;
+}
+@media screen and (min-width: 860px) {
+  .site-section .section-content p:first-child {
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.016em;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 .site-section.-headline {
   font-size: 24px;
@@ -620,22 +643,42 @@ img {
   letter-spacing: 0.016em;
   font-weight: 400;
   font-style: normal;
-  padding-top: 87px;
+  padding-top: 205px;
   background-color: inherit;
 }
+@media screen and (min-width: 860px) {
+  .site-section.-headline {
+    padding-top: 87px;
+  }
+}
 .site-section.-headline p:first-child {
-  font-size: 60px;
+  font-size: 30px;
   line-height: 1;
   letter-spacing: -0.012em;
   font-weight: 900;
   font-style: normal;
   margin: 0 0 35px;
 }
+@media screen and (min-width: 860px) {
+  .site-section.-headline p:first-child {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.012em;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
 
 .site-header {
   width: 270px;
   position: fixed;
   padding: 96px 60px 60px 90px;
+  display: none;
+}
+@media screen and (min-width: 860px) {
+  .site-header {
+    display: block;
+  }
 }
 .site-header .site-nav {
   margin-top: 47px;
@@ -695,24 +738,53 @@ img {
   color: #7dccf2;
 }
 .site-footer .logo-block {
-  float: left;
-  width: 270px;
-  padding-top: 36px;
-  padding-left: 120px;
+  padding: 36px;
+  text-align: center;
+}
+@media screen and (min-width: 860px) {
+  .site-footer .logo-block {
+    text-align: left;
+    float: left;
+    width: 270px;
+    padding-top: 36px;
+    padding-left: 120px;
+  }
 }
 .site-footer .logo-block .logo {
   width: 57px;
+  fill: #fff;
+  -webkit-transition: fill 0.2s ease-out;
+          transition: fill 0.2s ease-out;
+}
+.site-footer .logo-block .logo:hover {
+  fill: #7dccf2;
 }
 .site-footer .contact-block {
   float: left;
   width: 100%;
-  max-width: 464px;
-  padding-top: 60px;
-  margin-left: 330px;
+  text-align: center;
+  padding-bottom: 120px;
 }
-.site-footer .contact-block .phone, .site-footer .contact-block .email {
-  display: inline-block;
+@media screen and (min-width: 860px) {
+  .site-footer .contact-block {
+    padding: 60px 0;
+    text-align: left;
+    max-width: 464px;
+    margin-left: 60px;
+  }
 }
-.site-footer .contact-block .email {
-  width: 246px;
+@media screen and (min-width: 1200px) {
+  .site-footer .contact-block {
+    margin-left: 330px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .site-footer .contact-block .phone, .site-footer .contact-block .email {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 860px) {
+  .site-footer .contact-block .email {
+    width: 246px;
+  }
 }

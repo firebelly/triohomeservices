@@ -49,6 +49,12 @@ img {
   transition: border-color $hover-transition;
 }
 
+.single-line-md {
+  @include media-md {
+    display: block;
+  }
+}
+
 .button {
   @include h3;
   padding: 12px;
@@ -86,12 +92,17 @@ img {
 }
 
 .site-main {
-  margin-left: 270px; //22.5%;
+  @include media-md {
+    margin-left: 270px; //22.5%;
+  }
 }
 
 .site-section {
   position: relative;
-  padding: 60px 136px 60px 330px; //27.5%;
+  padding: 60px; //27.5%;
+  @include media-lg {
+    padding-left: 330px;
+  }
 
   &:nth-of-type(even) {
     background-color: $white;
@@ -104,37 +115,53 @@ img {
   }
 
   .section-title {
-    top: 0;
-    left: 0;
-    margin: 0;
     @include h2;
-    width: 330px; //27.5%;
-    padding: 60px;
-    position: absolute;
-    max-width: 330px;
+    margin: 0 0 30px;
+
+    @include media-lg {
+      top: 0;
+      left: 0;
+      width: 330px; //27.5%;
+      padding: 60px;
+      max-width: 330px;
+      position: absolute;
+    }
   }
 
   .section-content {
-    max-width: 464px;
+    @include media-md {
+      max-width: 464px;
+    }
 
     p { 
       margin: 18px 0;
     }
 
     p:first-child {
-      @include p1;
       margin-top: 0;
+
+      @include media-md {
+        @include p1;
+      }
     }
   }
 
   &.-headline {
     @include p1;
-    padding-top: 87px;
+    padding-top: 205px;
     background-color: inherit;
 
+    @include media-md {
+      padding-top: 87px;
+    }
+
     p:first-child {
-      @include h1;
+      @include h2;
       margin: 0 0 35px;
+
+      @include media-md {
+        @include h1;
+      }
     }
   }
 }

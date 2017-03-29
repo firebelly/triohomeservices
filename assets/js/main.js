@@ -36,6 +36,11 @@ var Main = (function($) {
       _scrollBody($(href));
     });
 
+    $('a.to-top').click(function(e){
+      e.preventDefault();
+      _scrollBody($('body'));
+    });
+
     // Scroll down to hash afer page load
     $(window).load(function() {
       if (window.location.hash) {

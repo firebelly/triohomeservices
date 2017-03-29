@@ -17,26 +17,49 @@
   }
 
   .logo-block{
-    float: left;
-    width: 270px;
-    padding-top: 36px;
-    padding-left: 120px;
+    padding: 36px;
+    text-align: center;
+
+    @include media-md {
+      text-align: left;
+      float: left;
+      width: 270px;
+      padding-top: 36px;
+      padding-left: 120px;
+    }
 
     .logo { 
       width: 57px;
+      fill: $white;
+      transition: fill $hover-transition;
+      &:hover{
+        fill: $blue;
+      }
     }
   }
   .contact-block {
     float: left;
     width: 100%;
-    max-width: 464px;
-    padding-top: 60px;
-    margin-left: 330px;
+    text-align: center;
+    padding-bottom: 120px;
+    @include media-md {
+      padding: 60px 0;
+      text-align: left;
+      max-width: 464px;
+      margin-left: 60px;
+    }
+    @include media-lg {
+      margin-left: 330px;
+    }
     .phone, .email {
-      display: inline-block;
+      @include media-md {
+        display: inline-block;
+      }
     }
     .email {
-      width: 246px;
+      @include media-md{
+        width: 246px;
+      }
     }
   }
 }

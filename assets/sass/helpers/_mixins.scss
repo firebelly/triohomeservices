@@ -116,6 +116,23 @@
   }
 }
 
+// Responsive mixins by Andy Richardson (@andimal): https://github.com/andimal/sass-responsive-mixin-madness
+@mixin media-sm() {
+  @media screen and (max-width: $breakpoint-md - 1) {
+    @content;
+  }
+}
+@mixin media-md() {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+@mixin media-lg() {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
 // ---------------------------------------------------------------------------------------------------------------------
 // --- hdpi ------------------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------

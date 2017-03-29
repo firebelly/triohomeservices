@@ -11,7 +11,7 @@ $padding: 1em;
 .one-half-right, .two-thirds-right, .one-third-right, .one-third-middle, .one-fourth-right  {margin-top: $margin;}
 
 
-@include min-screen($bpMd) {
+@include min-screen($breakpoint-md) {
   .flex-item {
     display: flex;
     flex-basis: auto;
