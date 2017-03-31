@@ -1,17 +1,124 @@
 // Header
 
 .site-header {
-  width: 270px; //22.5%;
+  top: 0;
+  left: 0;
   position: fixed; 
-  padding: 96px 60px 60px 90px;
-  display: none;
 
-  @include media-md {
-    display: block;
+  @include media-sm {
+    right: 0;
+    z-index: 1;
+    height: 102px;
+    background-color: $blue;
+    padding: 18px 40px 24px;
+
+    .logo {
+      width: 57px;
+    }
   }
 
-  .site-nav {
+  @include media-md {
+    width: 270px;
+    display: block;
+    padding: 96px 60px 60px 90px;
+  }
+
+  button {
+    @include form-reset-button;
+  }
+
+  .logo {
+    fill: $white;
+    transition: fill $hover-transition;
+    &:hover {
+      fill: $black;
+    }
+  }
+
+  .nav-open-button {
+    top: 29px;
+    right: 45px;
+    position: absolute;
+    @include media-md {
+      display: none;
+    }
+  }
+
+  .nav-close-button {
+    top: 30px;
+    right: 40px;
+    position: absolute;
+  }
+
+  .icon-hamburger {
+    width: 40px;
+    height: 36px;
+  }
+
+  .icon-x {
+    width: 30px;
+    height: 30px;
+  }
+
+  .site-nav.-mobile {
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    @include h2;
+    color: white;
+    display: block;
+    position: fixed;
+    padding: 18px 40px 50px;
+    background-color: $black;
+    transform: translateY(-100%);
+    transition: transform 0.12s 0.12s ease-out, opacity 0.12s 0.12s ease-out;
+    
+    .fade {
+      opacity: 0;
+      transition: opacity 0.12s ease-out;
+    }
+
+    &.-open{
+      transition: transform 0.12s ease-out, opacity 0.12s ease-out;
+    
+      transform: none;
+      opacity: 1;
+      .fade {
+        opacity: 1;
+        transition: opacity 0.12s 0.12s ease-out;
+      }
+    }
+
+    .underline {
+      border: none;
+    }
+
+    ul {
+      padding: 10px 0;
+      list-style: none;
+      margin: 30px 0 0;
+      border-top: 3px solid $white;
+
+      a {
+        display: block;
+        padding: 15px 0;
+        text-decoration: none;
+      }
+    }
+
+    @include media-md {
+      display: none;
+    }
+  }
+
+  .site-nav.-desktop {
+    display: none;
     margin-top: 47px;
+
+    @include media-md {
+      display: block;
+    }
 
     ul {
       padding-left: 0;
@@ -19,7 +126,6 @@
     }
 
     li {
-      @include h3;
       text-align: center;
 
       a {

@@ -27,6 +27,27 @@
   }
 }
 
+// Form Reset
+@mixin form-reset-common {
+  // Common resets for all form elements
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  border-radius: 0;  //iOS
+  appearance: none;
+  background: transparent;
+}
+
+@mixin form-reset-button {
+  @include form-reset-common;
+  
+  // Button specific
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 // Easily verically align any element (courtesey of @seb_ekstrom)
 @mixin vertical-align {
   position: relative;

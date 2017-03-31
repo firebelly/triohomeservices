@@ -584,7 +584,12 @@ img {
 
 .site-section {
   position: relative;
-  padding: 60px;
+  padding: 56px 40px;
+}
+@media screen and (min-width: 860px) {
+  .site-section {
+    padding: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .site-section {
@@ -670,33 +675,147 @@ img {
 }
 
 .site-header {
-  width: 270px;
+  top: 0;
+  left: 0;
   position: fixed;
-  padding: 96px 60px 60px 90px;
-  display: none;
+}
+@media screen and (max-width: 859px) {
+  .site-header {
+    right: 0;
+    z-index: 1;
+    height: 102px;
+    background-color: #7dccf2;
+    padding: 18px 40px 24px;
+  }
+  .site-header .logo {
+    width: 57px;
+  }
 }
 @media screen and (min-width: 860px) {
   .site-header {
+    width: 270px;
+    display: block;
+    padding: 96px 60px 60px 90px;
+  }
+}
+.site-header button {
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+}
+.site-header button:hover {
+  cursor: pointer;
+}
+.site-header .logo {
+  fill: #fff;
+  -webkit-transition: fill 0.2s ease-out;
+          transition: fill 0.2s ease-out;
+}
+.site-header .logo:hover {
+  fill: #000;
+}
+.site-header .nav-open-button {
+  top: 29px;
+  right: 45px;
+  position: absolute;
+}
+@media screen and (min-width: 860px) {
+  .site-header .nav-open-button {
+    display: none;
+  }
+}
+.site-header .nav-close-button {
+  top: 30px;
+  right: 40px;
+  position: absolute;
+}
+.site-header .icon-hamburger {
+  width: 40px;
+  height: 36px;
+}
+.site-header .icon-x {
+  width: 30px;
+  height: 30px;
+}
+.site-header .site-nav.-mobile {
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.012em;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  display: block;
+  position: fixed;
+  padding: 18px 40px 50px;
+  background-color: #000;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.12s 0.12s ease-out, opacity 0.12s 0.12s ease-out;
+          transition: transform 0.12s 0.12s ease-out, opacity 0.12s 0.12s ease-out;
+}
+.site-header .site-nav.-mobile .fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.12s ease-out;
+          transition: opacity 0.12s ease-out;
+}
+.site-header .site-nav.-mobile.-open {
+  -webkit-transition: -webkit-transform 0.12s ease-out, opacity 0.12s ease-out;
+          transition: transform 0.12s ease-out, opacity 0.12s ease-out;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+.site-header .site-nav.-mobile.-open .fade {
+  opacity: 1;
+  -webkit-transition: opacity 0.12s 0.12s ease-out;
+          transition: opacity 0.12s 0.12s ease-out;
+}
+.site-header .site-nav.-mobile .underline {
+  border: none;
+}
+.site-header .site-nav.-mobile ul {
+  padding: 10px 0;
+  list-style: none;
+  margin: 30px 0 0;
+  border-top: 3px solid #fff;
+}
+.site-header .site-nav.-mobile ul a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+@media screen and (min-width: 860px) {
+  .site-header .site-nav.-mobile {
+    display: none;
+  }
+}
+.site-header .site-nav.-desktop {
+  display: none;
+  margin-top: 47px;
+}
+@media screen and (min-width: 860px) {
+  .site-header .site-nav.-desktop {
     display: block;
   }
 }
-.site-header .site-nav {
-  margin-top: 47px;
-}
-.site-header .site-nav ul {
+.site-header .site-nav.-desktop ul {
   padding-left: 0;
   list-style: none;
 }
-.site-header .site-nav li {
-  font-size: 14px;
-  line-height: 1.2857;
-  letter-spacing: 0.060em;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-style: normal;
+.site-header .site-nav.-desktop li {
   text-align: center;
 }
-.site-header .site-nav li a {
+.site-header .site-nav.-desktop li a {
   display: block;
   padding: 18px 0;
   font-size: 13px;
@@ -786,5 +905,27 @@ img {
 @media screen and (min-width: 860px) {
   .site-footer .contact-block .email {
     width: 246px;
+  }
+}
+
+#breakpoint-indicator {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+@media screen and (max-width: 859px) {
+  #breakpoint-indicator::after {
+    content: 'small';
+  }
+}
+@media screen and (min-width: 860px) {
+  #breakpoint-indicator::after {
+    content: 'medium';
+  }
+}
+@media screen and (min-width: 1200px) {
+  #breakpoint-indicator::after {
+    content: 'large';
   }
 }

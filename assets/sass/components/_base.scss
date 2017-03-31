@@ -99,7 +99,10 @@ img {
 
 .site-section {
   position: relative;
-  padding: 60px; //27.5%;
+  padding: 56px 40px;
+  @include media-md {
+    padding: 60px;
+  }
   @include media-lg {
     padding-left: 330px;
   }
