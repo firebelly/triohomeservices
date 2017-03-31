@@ -7,12 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Trio Home Services</title>
+    <!-- BEGIN meta -->
+    <?php 
+      $title = 'Trio Home Services';
+      $description = 'We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.';
+      $logo = '';
+      $url = '';
+    ?>
+    <meta itemprop="name" content="">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
     <meta name="description" content="">
+    <meta name="author" content="">
+    <meta property="article:published_time" content="">
+    <meta property="article:section" content="">
+    <!-- facebook/og -->
     <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:type" content="article">
     <meta property="og:description" content="">
-    <meta property="fb_appid" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="650">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <!-- END meta -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.png">
     <!--[if lt IE 9]>
@@ -46,7 +70,7 @@
       <section class="site-section" id="what-we-do">
         <h2 class="section-title">What We Do</h2>
         <div class="section-content user-content">
-          <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities. </p>
+          <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.</p>
           <ul>
             <h3>We do it all:</h3>
             <li><span class="highlight">Housekeeping</span></li>
@@ -60,7 +84,6 @@
       <section class="site-section" id="rates-and-scheduling">
         <h2 class="section-title">Rates and Scheduling</h2>
         <div class="section-content user-content">
-          <p>We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.</p>
           <p>Our rates start at $15/hour, for a minimum of three hours. It’s important to us that those who need accessible, affordable assistance can find it. Call or email to get a quote.</p>
           <p>Whether it’s two hours a week, daily assistance or one full day of deep cleaning and comprehensive care, we’re committed to delivering excellent, kind and reliable service.</p>
           <a href="mailto:#" class="button">Email us to get a quote</a>

@@ -937,7 +937,8 @@ var Main = (function($) {
     // Clone desktop nav and give birth to mobile nav
     var $desktopNav = $('.site-nav');  // Proud Mama
     var $mobileNav = $desktopNav.clone().appendTo('.site-header');  // WAAAAAAAAA!!!  Congratulations, Mr. and Mrs. Desktop.  It's a nav.
-    $mobileNav.addClass('-mobile').removeClass('-desktop'); // I don't wanna be like you!  I wanna be a MOBILE NAV.  I wish I was never born!
+    $mobileNav.addClass('-mobile').removeClass('-desktop'); // I don't wanna be like you!  I wanna be a MOBILE.
+    // I have no son.
 
     // Add markup to mobile nav
     $mobileNav.prepend(
@@ -957,7 +958,7 @@ var Main = (function($) {
       _closeMobileNav();
     });
 
-    // Click out
+    // Click out should close nav
     $('body').on('click', function(e) {
       if ($('.site-nav.-mobile').is('.-open') && !$(e.target).closest('.site-nav.-mobile').length) {
         _closeMobileNav();
