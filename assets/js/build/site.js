@@ -869,9 +869,6 @@ var Main = (function($) {
     // Set screen size vars
     _resize();
 
-    // Init functions
-    _testInit();
-
     // Init Mobile Nav
     _initMobileNav();
 
@@ -917,10 +914,6 @@ var Main = (function($) {
       delay: delay,
       offset: -mobileNavOffset
     }, "easeOutSine");
-  }
-
-  function _testInit() {
-    console.log('Testing testing...is this thing on?');
   }
 
   // Track ajax pages in Analytics

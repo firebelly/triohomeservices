@@ -10,32 +10,30 @@
     <!-- BEGIN meta -->
     <?php 
       $title = 'Trio Home Services';
-      $description = 'We are Certified Nursing Assistants with decades of combined experience in housekeeping, personal care and case management, with a focus on assisting seniors and individuals with disabilities.';
-      $logo = '';
-      $url = '';
+      $description = 'Compassionate, professional and personal assistance in the comfort of your own home. Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.';
+      $logo = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
+      $url = 'http://triohomeservices.com/';
     ?>
-    <meta itemprop="name" content="">
-    <meta itemprop="image" content="">
-    <meta itemprop="description" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta property="article:published_time" content="">
-    <meta property="article:section" content="">
+    <meta itemprop="name" content="<?= $title ?>">
+    <meta itemprop="image" content="<?= $logo ?>">
+    <meta itemprop="description" content="<?= $description ?>">
+    <meta name="description" content="<?= $description ?>">
+    <meta name="author" content="Chapearl Thompson, CNA">
     <!-- facebook/og -->
-    <meta property="og:title" content="">
+    <meta property="og:title" content="<?= $title ?>">
     <meta property="og:type" content="article">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="650">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
+    <meta property="og:description" content="<?= $description ?>">
+    <meta property="og:image" content="<?= $logo ?>">
+    <meta property="og:image:width" content="1728">
+    <meta property="og:image:height" content="1152">
+    <meta property="og:url" content="<?= $url ?>">
+    <meta property="og:site_name" content="<?= $title ?>">
     <!-- twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
-    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="<?= $title ?>">
+    <meta name="twitter:description" content="<?= $description ?>">
+    <meta name="twitter:image" content="<?= $logo ?>">
+    <meta name="twitter:url" content="<?= $url ?>">
     <!-- END meta -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.png">
