@@ -11,28 +11,31 @@
     <?php 
       $title = 'Trio Home Services';
       $description = 'Compassionate, professional and personal assistance in the comfort of your own home. Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.';
-      $logo = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
+      $image = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
+      $imageW = 1728;
+      $imageH = 1152;
       $url = 'http://triohomeservices.firebelly.co/';
+      $author = 'Chapearl Thompson, CNA';
     ?>
     <meta itemprop="name" content="<?= $title ?>">
-    <meta itemprop="image" content="<?= $logo ?>">
+    <meta itemprop="image" content="<?= $image ?>">
     <meta itemprop="description" content="<?= $description ?>">
     <meta name="description" content="<?= $description ?>">
-    <meta name="author" content="Chapearl Thompson, CNA">
+    <meta name="author" content="<?= $author ?>">
     <!-- facebook/og -->
     <meta property="og:title" content="<?= $title ?>">
     <meta property="og:type" content="article">
     <meta property="og:description" content="<?= $description ?>">
-    <meta property="og:image" content="<?= $logo ?>">
-    <meta property="og:image:width" content="1728">
-    <meta property="og:image:height" content="1152">
+    <meta property="og:image" content="<?= $image ?>">
+    <meta property="og:image:width" content="<?= $imageW ?>">
+    <meta property="og:image:height" content="<?= $imageH ?>">
     <meta property="og:url" content="<?= $url ?>">
     <meta property="og:site_name" content="<?= $title ?>">
     <!-- twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<?= $title ?>">
     <meta name="twitter:description" content="<?= $description ?>">
-    <meta name="twitter:image" content="<?= $logo ?>">
+    <meta name="twitter:image" content="<?= $image ?>">
     <meta name="twitter:url" content="<?= $url ?>">
     <!-- END meta -->
     <link rel="stylesheet" href="assets/css/main.css">
