@@ -12,7 +12,7 @@
       $title = 'Trio Home Services';
       $description = 'Compassionate, professional and personal assistance in the comfort of your own home. Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.';
       $logo = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
-      $url = 'http://triohomeservices.com/';
+      $url = 'http://triohomeservices.firebelly.co/';
     ?>
     <meta itemprop="name" content="<?= $title ?>">
     <meta itemprop="image" content="<?= $logo ?>">
