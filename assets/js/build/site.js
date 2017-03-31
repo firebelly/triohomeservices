@@ -964,11 +964,9 @@ var Main = (function($) {
   }
   function _openMobileNav() {
     $('.site-nav.-mobile').addClass('-open');
-    console.log('open');
   }
   function _closeMobileNav() {
     $('.site-nav.-mobile').removeClass('-open');
-    console.log('close');
   }
 
   function _injectSvg() {
