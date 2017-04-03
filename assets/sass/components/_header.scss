@@ -72,21 +72,21 @@
     padding: 18px 40px 50px;
     background-color: $black;
     transform: translateY(-100%);
-    transition: transform 0.12s 0.12s ease-out, opacity 0.12s 0.12s ease-out;
+    transition: transform 0.17s 0.17s ease-out, opacity 0.17s 0.17s ease-out;
     
     .fade {
       opacity: 0;
-      transition: opacity 0.12s ease-out;
+      transition: opacity 0.17s ease-out;
     }
 
     &.-open{
-      transition: transform 0.12s ease-out, opacity 0.12s ease-out;
+      transition: transform 0.17s ease-out, opacity 0.17s ease-out;
     
       transform: none;
       opacity: 1;
       .fade {
         opacity: 1;
-        transition: opacity 0.12s 0.12s ease-out;
+        transition: opacity 0.17s 0.17s ease-out;
       }
     }
 
