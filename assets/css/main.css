@@ -902,7 +902,7 @@ img {
 }
 @media screen and (min-width: 860px) {
   .site-footer .contact-block .email {
-    width: 246px;
+    margin-right: 60px;
   }
 }
 

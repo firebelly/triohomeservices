@@ -58,7 +58,7 @@
     }
     .email {
       @include media-md{
-        width: 246px;
+        margin-right: 60px;
       }
     }
   }

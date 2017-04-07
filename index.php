@@ -1,3 +1,15 @@
+<?php 
+  $title = 'Trio Home Services';
+  $description = 'Compassionate, professional and personal assistance in the comfort of your own home. Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.';
+  $image = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
+  $imageW = 1728;
+  $imageH = 1152;
+  $url = 'http://triohomeservices.com/';
+  $author = 'Chapearl Thompson, CNA';
+  $email = 'info@triohomeservices.com';
+  $ga_tracking = 'UA-97025355-1';
+?>
+
 <!doctype html>
 <!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie9 lt-ie10"> <![endif]-->
 <!--[if IE 9 ]> <html lang="en" class="no-js ie9 lt-ie10"> <![endif]-->
@@ -8,15 +20,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Trio Home Services</title>
     <!-- BEGIN meta -->
-    <?php 
-      $title = 'Trio Home Services';
-      $description = 'Compassionate, professional and personal assistance in the comfort of your own home. Trio is a family business that offers comprehensive home services, customized to meet each one of our client’s needs.';
-      $image = 'http://triohomeservices.firebelly.co/assets/images/social.jpg';
-      $imageW = 1728;
-      $imageH = 1152;
-      $url = 'http://triohomeservices.firebelly.co/';
-      $author = 'Chapearl Thompson, CNA';
-    ?>
     <meta itemprop="name" content="<?= $title ?>">
     <meta itemprop="image" content="<?= $image ?>">
     <meta itemprop="description" content="<?= $description ?>">
@@ -87,7 +90,7 @@
         <div class="section-content user-content">
           <p>Our rates start at $15/hour, for a minimum of three hours. It’s important to us that those who need accessible, affordable assistance can find it. Call or email to get a quote.</p>
           <p>Whether it’s two hours a week, daily assistance or one full day of deep cleaning and comprehensive care, we’re committed to delivering excellent, kind and reliable service.</p>
-          <a href="mailto:#" class="button">Email us to get a quote</a>
+          <a href="mailto:<?= $email ?>" class="button">Email us to get a quote</a>
           <p class="centered">Or call 312.434.0083</p>
         </div>
       </section>
@@ -106,14 +109,14 @@
         </a>
       </div>
       <div class="contact-block">
-        <div class="email"><a href="mailto:#">emailtk@url.com</a></div>
+        <div class="email"><a href="mailto:<?= $email ?>"><?= $email ?></a></div>
         <div class="phone">312.434.0083</div>
       </div>
     </footer>
     <script src="assets/js/build/site.min.js"></script>
     <script type="text/javascript">// Google Analytics
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-XXXXX-X']); // Replace "XXXXX-X" with your account code
+      _gaq.push(['_setAccount', '<?= $ga_tracking ?>']); 
       _gaq.push(['_trackPageview']);
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
